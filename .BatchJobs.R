@@ -1,4 +1,4 @@
-cluster.functions = makeClusterFunctionsSLURM(template.file = "lmu_lrz.tmpl", 
+cluster.functions = makeClusterFunctionsSLURM(template.file = "lrz_serial.tmpl", 
     list.jobs.cmd = c("squeue", "-h", "-o %i", "-u $USER", "--clusters=serial", "| tail -n +2"))
 staged.queries = TRUE
 raise.warnings = FALSE
